@@ -1,0 +1,32 @@
+# Language and Documentation Rules
+
+## English Usage
+- All content in files must be written in English, including:
+  - Code comments
+  - Documentation
+  - UI text
+  - Data field names and values
+
+## Documentation Requirements
+- Each folder containing code files must include a `docs.md` file
+- The `docs.md` file should:
+  - Document requirements for all code files in the current directory
+  - Be updated whenever code files are modified
+  - Maintain accuracy and be up-to-date
+  - Be properly organized into logical sections
+  - Serve as the primary documentation for the directory's code
+
+## Documentation Update Process
+1. When creating new code files:
+   - Create corresponding `docs.md` if it doesn't exist
+   - Add documentation for the new files
+2. When modifying existing code:
+   - Update the relevant sections in `docs.md`
+   - Ensure documentation reflects current functionality
+3. Must be properly structured with clear sections
+4. Documentation sections should include:
+   - Purpose and overview
+   - File descriptions
+   - Key functionalities
+   - Dependencies
+   - Any important technical decisions or considerations
