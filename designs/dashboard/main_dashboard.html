@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIGUI Dashboard Prototype</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50">
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 bg-gray-800 text-white p-4">
+        <h1 class="text-xl font-bold mb-6">AIGUI Dashboard</h1>
+        <nav>
+          <ul class="space-y-2">
+            <li><a href="#" class="block p-2 bg-gray-700 rounded">Dashboard</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-700 rounded">Projects</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-700 rounded">Models</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-700 rounded">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="flex-1 p-8 overflow-auto">
+        <h2 class="text-2xl font-bold mb-6">Dashboard Overview</h2>
+        
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-gray-500 text-sm font-medium">Active Projects</h3>
+            <p class="text-3xl font-bold">12</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-gray-500 text-sm font-medium">Models in Use</h3>
+            <p class="text-3xl font-bold">5</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-gray-500 text-sm font-medium">API Calls Today</h3>
+            <p class="text-3xl font-bold">1,284</p>
+          </div>
+        </div>
+        
+        <!-- Recent Activity -->
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+          <h3 class="text-lg font-medium mb-4">Recent Activity</h3>
+          <div class="space-y-4">
+            <div class="border-b pb-2">
+              <p class="font-medium">Project "Customer Support Bot" updated</p>
+              <p class="text-sm text-gray-500">2 hours ago</p>
+            </div>
+            <div class="border-b pb-2">
+              <p class="font-medium">New model "GPT-4 Turbo" added</p>
+              <p class="text-sm text-gray-500">Yesterday</p>
+            </div>
+            <div class="border-b pb-2">
+              <p class="font-medium">API usage limit increased</p>
+              <p class="text-sm text-gray-500">3 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
