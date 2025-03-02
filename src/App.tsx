@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Explore } from './pages/Explore'
-import { Header } from './components/Header2/Header'
+import { Header } from './components/Header/Header'
 
 function App() {
   const [count, setCount] = useState(0)

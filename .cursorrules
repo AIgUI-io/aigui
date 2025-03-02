@@ -164,3 +164,26 @@ This project aims to democratize UI creation through AI assistance while fosteri
        return <div></div>;
      }
      ```
+
+7. React List Rendering and Key Handling:
+   - Never use array index as a key when rendering lists in React
+   - Always use a combination of a random string prefix and index as the key
+   - This approach helps React efficiently update the DOM and prevents potential issues with component state
+   - Example of correct key usage:
+     ```jsx
+     {items.map((item, index) => (
+       <ListItem key={`8d37d9_${index}`} data={item} />
+     ))}
+     ```
+   - Incorrect key usage to avoid:
+     ```jsx
+     {items.map((item, index) => (
+       <ListItem key={index} data={item} />
+     ))}
+     ```
+   - When possible, use unique identifiers from your data instead:
+     ```jsx
+     {users.map((user) => (
+       <UserCard key={`user_${user.id}`} userData={user} />
+     ))}
+     ```
