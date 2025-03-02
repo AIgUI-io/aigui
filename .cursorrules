@@ -109,3 +109,21 @@ This project aims to democratize UI creation through AI assistance while fosteri
      - Use shadcn/ui Select component instead of HTML `<select>` element
    - When a shadcn/ui component exists for a particular UI element, it must be used
    - Only use native HTML elements when there is no corresponding shadcn/ui component
+
+6. Component File and Export Rules:
+   - Each file must contain only one React component
+   - Components must be exported using named export, not default export
+   - Example of correct export:
+     ```jsx
+     // Correct way
+     export function UserProfile(props) {
+       return <div></div>;
+     }
+     ```
+   - Incorrect export to avoid:
+     ```jsx
+     // Avoid this syntax
+     export default function UserProfile(props) {
+       return <div></div>;
+     }
+     ```
