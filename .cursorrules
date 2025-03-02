@@ -44,6 +44,19 @@ This project aims to democratize UI creation through AI assistance while fosteri
    - Ensure adequate contrast for readability
    - Implement intuitive navigation and interaction patterns
 
+5. Content Guidelines:
+   - When implementing designs from uploaded images/mockups, replace all original design copy with AIgUI project-related content
+   - Do not keep any original text content from the design mockups
+   - Ensure all text content aligns with the AIgUI platform's purpose and features
+   - Text should reflect AI-assisted UI generation and community collaboration themes
+   - Example transformations:
+     * Generic "User Dashboard" → "AI Component Studio"
+     * "Recent Projects" → "Generated UI Components"
+     * "Team Members" → "Component Contributors"
+     * "Settings" → "AI Generation Settings"
+     * "Upload Files" → "Import Design for AI Generation"
+     * "Share with Team" → "Share in AI Component Community"
+
 ## Code Conventions
 1. Component Definition:
    - Always use function declaration syntax for React components
