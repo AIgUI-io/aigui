@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "design": "open http://localhost:8000 && php -S localhost:8000 -t designs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
