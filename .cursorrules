@@ -83,13 +83,22 @@ This project aims to democratize UI creation through AI assistance while fosteri
    - All components must include default demo data for testing and preview purposes
    - When images are required, use Unsplash images as mock data
    - Demo data should be comprehensive enough to showcase all component features and states
+   - Unsplash image links MUST:
+     * Be direct, valid URLs
+     * Include query parameters for image quality and size
+     * Use HTTPS protocol
+     * Specify width and height to ensure consistent image rendering
+   - Example of a valid Unsplash image link:
+     ```jsx
+     "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format"
+     ```
    - Example:
      ```jsx
      // Default demo data for a user profile component
      const defaultUserData = {
        name: "Alex Johnson",
        title: "Product Designer",
-       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&auto=format",
+       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format",
        stats: {
          followers: 1240,
          following: 453,
@@ -100,6 +109,21 @@ This project aims to democratize UI creation through AI assistance while fosteri
 
 4. Component File Structure:
    - Each component must be placed in its own dedicated directory
+   - New component directories must be created in the same directory as the current file
+   - Do not create new component directories inside the `/components` folder
+   - The component directory should have the same name as the component
+   - Use the file naming convention: `/ComponentName/ComponentName.tsx`
+   - Example of correct component file structure:
+     ```
+     /UserProfile/UserProfile.tsx
+     ```
+   - Example of component definition in `UserProfile.tsx`:
+     ```jsx
+     // Correct way to define and export the component
+     export function UserProfile(props) {
+       return <div>User Profile Component</div>;
+     }
+     ```
 
 5. UI Component Usage:
    - Always use shadcn/ui components instead of native HTML elements

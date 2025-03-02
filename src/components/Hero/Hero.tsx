@@ -14,7 +14,7 @@ const SearchBar = () => {
           </svg>
           <input
             type="text"
-            placeholder="Search through massive template collection"
+            placeholder="Search for AI-powered UI components and visualizations"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className={cn('w-full px-3 py-1 outline-none text-sm')}
@@ -27,10 +27,10 @@ const SearchBar = () => {
 
 // Hero Component for template exploration
 export function Hero({
-  title = 'Free Templates',
-  description = 'Massive design templates covering hundreds of scenarios',
-  gradientFrom = 'from-rose-200',
-  gradientTo = 'to-rose-300',
+  title = 'AI-Powered UI Generation',
+  description = 'Create beautiful, interactive UI components with the power of AI',
+  gradientFrom = 'from-blue-900',
+  gradientTo = 'to-purple-800',
   className = '',
 }) {
   return (

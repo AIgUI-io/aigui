@@ -1,4 +1,4 @@
-import { cn } from '../lib/utils';
+import { cn } from '../../lib/utils';
 
 // Template Card Component for displaying a card with an image and title
 export function TemplateCard({ title, image }: { title: string; image: string }) {
