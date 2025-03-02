@@ -21,21 +21,25 @@ This project aims to democratize UI creation through AI assistance while fosteri
   - When modifying the `.cursorrules` file, all additions and changes must be in English
 
 ## Documentation Requirements
-- Each folder containing code files must include a `docs.md` file
-- The `docs.md` file should:
+- Each folder containing code files must include both `docs.md` and `docs-cn.md` files
+- The documentation files should:
   - Document requirements for all code files in the current directory
   - Be updated whenever code files are modified
   - Maintain accuracy and be up-to-date
   - Be properly organized into logical sections
   - Serve as the primary documentation for the directory's code
+  - `docs.md` should be in English
+  - `docs-cn.md` should be in Chinese
+  - Both language versions must contain the same information and be synchronized
 
 ## Documentation Update Process
 1. When creating new code files:
-   - Create corresponding `docs.md` if it doesn't exist
-   - Add documentation for the new files
+   - Create corresponding `docs.md` and `docs-cn.md` if they don't exist
+   - Add documentation for the new files in both languages
 2. When modifying existing code:
-   - Update the relevant sections in `docs.md`
-   - Ensure documentation reflects current functionality
+   - Update the relevant sections in both `docs.md` and `docs-cn.md`
+   - Ensure documentation in both languages reflects current functionality
+   - Keep both language versions synchronized
 3. Must be properly structured with clear sections
 4. Documentation sections should include:
    - Purpose and overview
