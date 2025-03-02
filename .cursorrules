@@ -6,6 +6,7 @@
   - Documentation
   - UI text
   - Data field names and values
+  - When modifying the `.cursorrules` file, all additions and changes must be in English
 
 ## Documentation Requirements
 - Each folder containing code files must include a `docs.md` file
@@ -30,3 +31,42 @@
    - Key functionalities
    - Dependencies
    - Any important technical decisions or considerations
+
+## UI Development Rules
+1. Technology Stack:
+   - Use React for component development
+   - Use Tailwind CSS for styling
+   - Use shadcn/ui for UI components
+
+2. Layout Guidelines:
+   - Ensure page layouts are logical and aesthetically pleasing
+   - Maintain appropriate element density (not too crowded, not too sparse)
+   - Effectively utilize whitespace, especially in left and right margins
+   - Prefer horizontal (left-right) layouts where appropriate
+
+3. Component Design:
+   - Create reusable components following React best practices
+   - Ensure components are responsive across different screen sizes
+   - Maintain consistent styling using Tailwind CSS utility classes
+   - Leverage shadcn/ui components for a cohesive design system
+
+4. UI/UX Considerations:
+   - Prioritize user experience in all design decisions
+   - Ensure adequate contrast for readability
+   - Implement intuitive navigation and interaction patterns
+
+## Code Conventions
+1. className Handling:
+   - Always wrap `className` values with the `cn` utility function, e.g., `<div className={cn("text-red-400")}></div>`
+   - The `cn` function is used to facilitate manual modification of classNames, making it easier to organize classNames with commas and line breaks
+   - This approach improves code readability, especially when dealing with complex conditional class names
+   - Example:
+     ```jsx
+     <div className={cn(
+       "base-class",
+       isActive && "active-class",
+       variant === "primary" ? "primary-class" : "secondary-class"
+     )}>
+       Content
+     </div>
+     ```
