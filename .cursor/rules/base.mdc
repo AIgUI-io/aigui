@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+---
+# AIgUI Project Overview
+
+AIgUI is a React frontend project that leverages Large Language Models (LLMs) to dynamically generate data visualization and interactive UI components. The platform also includes a user community similar to GitHub, where users can:
+
+- Share their created UI interfaces (cards, tables, charts)
+- Share insights for specific domains
+- Browse popular UI components
+- Fork and modify existing components based on personal requirements
+
+This project aims to democratize UI creation through AI assistance while fostering a collaborative community of creators.
+
+# Language and Documentation Rules
+
+## English Usage
+- All content in files must be written in English, including:
+  - README.md and all other documentation files
+  - Code comments
+  - Documentation
+  - UI text
+  - Data field names and values
+  - When modifying the `.cursor/rules/*` file, all additions and changes must be in English

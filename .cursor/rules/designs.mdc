@@ -1,0 +1,42 @@
+---
+description: for html only prototype design files
+globs: /designs/*.html
+---
+[base.mdc](mdc:.cursor/rules/base.mdc)
+
+## AIGUI HTML Prototype Design Guidelines
+
+This rule provides guidelines and templates for creating HTML prototypes for AIGUI with beautiful interfaces and left-right layouts.
+
+### File Organization Rules
+
+- All HTML prototype files MUST be placed in the `/designs` directory
+- Use subdirectories for categorization and organization (e.g., `/designs/dashboard/`, `/designs/user-flow/`)
+- Maintain a clear directory structure that reflects the application's architecture
+- Use descriptive filenames that indicate the purpose of each prototype
+
+
+### Key Design Principles
+
+- Use modern, clean aesthetics
+- Implement responsive design
+- Focus on left-right layouts for optimal workflow
+- Use Tailwind CSS for styling
+
+
+## Template
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  </body>
+</html>
+```
