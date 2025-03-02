@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIGUI Design Templates</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    .aigui-blue {
+      color: #4F46E5;
+    }
+    .aigui-gradient {
+      background: linear-gradient(135deg, #4F46E5, #9333EA);
+    }
+    .hover-scale {
+      transition: transform 0.2s;
+    }
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+    .template-card {
+      transition: all 0.3s ease;
+    }
+    .template-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar {
+      background-color: #f9f9f9;
+      border-radius: 24px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+  
+  <!-- Top Navigation -->
+  <nav class="bg-white border-b border-gray-200 py-3 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-8">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" class="text-blue-500">
+            <path d="M15 2C7.82 2 2 7.82 2 15C2 22.18 7.82 28 15 28C22.18 28 28 22.18 28 15C28 7.82 22.18 2 15 2Z" fill="#4F46E5"/>
+          </svg>
+          <span class="ml-2 font-bold text-xl">AIGUI</span>
+        </div>
+        
+        <!-- Main Navigation -->
+        <div class="hidden md:flex space-x-6">
+          <button class="flex items-center text-gray-700 hover:text-gray-900">
+            Templates
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button class="flex items-center text-gray-700 hover:text-gray-900">
+            Design Solutions
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button class="flex items-center text-gray-700 hover:text-gray-900">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button class="flex items-center text-gray-700 hover:text-gray-900">
+            Visual AI
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button class="flex items-center text-gray-700 hover:text-gray-900">
+            Pricing
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button class="text-gray-700 hover:text-gray-900">Desktop App</button>
+        </div>
+      </div>
+      
+      <div class="flex space-x-4 items-center">
+        <button class="text-gray-700 hover:text-gray-900 px-3 py-1">Login</button>
+        <button class="bg-purple-600 text-white px-5 py-2 rounded-md font-medium hover:bg-purple-700 transition">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <div class="relative bg-gradient-to-r from-pink-100 to-purple-100 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-6">Free Templates</h1>
+      
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto mb-8">
+        <div class="search-bar flex items-center px-4 py-2 border border-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" placeholder="Search templates" class="w-full px-3 py-1 outline-none bg-transparent">
+        </div>
+        <p class="text-sm text-gray-600 mt-2">Thousands of templates for hundreds of design scenarios</p>
+      </div>
+      
+      <!-- Background Elements -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-pink-200 rounded-full opacity-50"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-200 rounded-full opacity-50"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Category Navigation -->
+  <div class="container mx-auto px-6 py-8">
+    <h2 class="text-2xl font-bold mb-6">Browse by Category</h2>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
+      <!-- Category 1 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-pink-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Presentations</p>
+      </div>
+      
+      <!-- Category 2 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-blue-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">CV Templates</p>
+      </div>
+      
+      <!-- Category 3 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Mobile Posters</p>
+      </div>
+      
+      <!-- Category 4 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-yellow-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Greeting Cards</p>
+      </div>
+      
+      <!-- Category 5 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-purple-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Social Media Covers</p>
+      </div>
+      
+      <!-- Category 6 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-red-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Logo Design</p>
+      </div>
+      
+      <!-- Category 7 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-indigo-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Social Posts</p>
+      </div>
+      
+      <!-- Category 8 -->
+      <div class="template-card bg-white rounded-lg shadow-sm p-4 text-center hover-scale cursor-pointer">
+        <div class="w-16 h-16 mx-auto mb-2 bg-pink-100 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <p class="text-sm font-medium">Greeting Cards</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Latest Templates -->
+  <div class="container mx-auto px-6 py-8">
+    <h2 class="text-2xl font-bold mb-6">Latest Templates</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Template 1 -->
+      <div class="template-card bg-white rounded-lg shadow-sm overflow-hidden hover-scale">
+        <div class="h-48 bg-blue-100 relative">
+          <img src="https://via.placeholder.com/400x300/e2f0ff/0066cc?text=Spring Theme" alt="Spring Theme Template" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-medium">Spring Theme Template</h3>
+          <p class="text-sm text-gray-600">Fresh Natural Style Design</p>
+        </div>
+      </div>
+      
+      <!-- Template 2 -->
+      <div class="template-card bg-white rounded-lg shadow-sm overflow-hidden hover-scale">
+        <div class="h-48 bg-pink-100 relative">
+          <img src="https://via.placeholder.com/400x300/fff0f5/cc0066?text=Traditional Character Illustration" alt="Traditional Character Illustration" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-medium">Traditional Character Illustration</h3>
+          <p class="text-sm text-gray-600">Traditional Eastern Aesthetic Design</p>
+        </div>
+      </div>
+      
+      <!-- Template 3 -->
+      <div class="template-card bg-white rounded-lg shadow-sm overflow-hidden hover-scale">
+        <div class="h-48 bg-gray-100 relative">
+          <img src="https://via.placeholder.com/400x300/f5f5f5/333333?text=Professional Application Form" alt="Professional Application Form" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-medium">Professional Application Form</h3>
+          <p class="text-sm text-gray-600">Simple and Professional Table Design</p>
+        </div>
+      </div>
+      
+      <!-- Template 4 -->
+      <div class="template-card bg-white rounded-lg shadow-sm overflow-hidden hover-scale">
+        <div class="h-48 bg-green-100 relative">
+          <img src="https://via.placeholder.com/400x300/f0fff0/006600?text=Flower Shop Opening Poster" alt="Flower Shop Opening Poster" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-medium">Flower Shop Opening Poster</h3>
+          <p class="text-sm text-gray-600">Fresh Floral Theme Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 mt-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-blue-500">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#4F46E5"/>
+            </svg>
+            <span class="ml-2 font-bold text-lg">AIGUI</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">AI-Powered Design Made Simple</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="font-medium mb-2">Product</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-gray-900">Features</a></li>
+              <li><a href="#" class="hover:text-gray-900">Templates</a></li>
+              <li><a href="#" class="hover:text-gray-900">Apps</a></li>
+              <li><a href="#" class="hover:text-gray-900">Pricing</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-2">Learn</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+              <li><a href="#" class="hover:text-gray-900">Tutorials</a></li>
+              <li><a href="#" class="hover:text-gray-900">Design School</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-2">Support</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-gray-900">Help Center</a></li>
+              <li><a href="#" class="hover:text-gray-900">Contact Us</a></li>
+              <li><a href="#" class="hover:text-gray-900">Community</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-2">Company</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+              <li><a href="#" class="hover:text-gray-900">Careers</a></li>
+              <li><a href="#" class="hover:text-gray-900">Media</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-200 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-600">&copy; 2023 AIGUI. All rights reserved</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

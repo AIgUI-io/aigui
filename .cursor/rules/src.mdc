@@ -3,6 +3,8 @@ description: for react code
 globs: /src/*
 ---
 [base.mdc](mdc:.cursor/rules/base.mdc)
+[splash.mdc](mdc:.cursor/rules/splash.mdc)
+
 
 ## UI Development Rules
 1. Technology Stack:

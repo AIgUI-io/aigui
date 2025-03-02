@@ -3,6 +3,8 @@ description: for html only prototype design files
 globs: /designs/*.html
 ---
 [base.mdc](mdc:.cursor/rules/base.mdc)
+[splash.mdc](mdc:.cursor/rules/splash.mdc)
+
 
 ## AIGUI HTML Prototype Design Guidelines
 
@@ -22,6 +24,7 @@ This rule provides guidelines and templates for creating HTML prototypes for AIG
 - Implement responsive design
 - Focus on left-right layouts for optimal workflow
 - Use Tailwind CSS for styling
+- **All text content and labels in design prototypes MUST be in English**
 
 
 ## Template
