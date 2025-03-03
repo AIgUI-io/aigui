@@ -1,0 +1,32 @@
+---
+description: use splash for image mock
+globs: 
+---
+
+## Component Development:
+   - All components must include default demo data for testing and preview purposes
+   - When images are required, use Unsplash images as mock data
+   - Demo data should be comprehensive enough to showcase all component features and states
+   - Unsplash image links MUST:
+     * Be direct, valid URLs
+     * Include query parameters for image quality and size
+     * Use HTTPS protocol
+     * Specify width and height to ensure consistent image rendering
+   - Example of a valid Unsplash image link:
+     ```jsx
+     "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format"
+     ```
+   - Example:
+     ```jsx
+     // Default demo data for a user profile component
+     const defaultUserData = {
+       name: "Alex Johnson",
+       title: "Product Designer",
+       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format",
+       stats: {
+         followers: 1240,
+         following: 453,
+         projects: 28
+       }
+     };
+     ```
